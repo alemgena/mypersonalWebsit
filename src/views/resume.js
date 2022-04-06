@@ -4,8 +4,12 @@ import Fade from 'react-reveal/Fade';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-
-
+//import TelegramIcon from '@mui/icons-material/Telegram';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+//https://t.me/alemgenateferi
+import TelegramIcon from '@material-ui/icons/Telegram'
+//import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const useStyles = makeStyles({
   card: {
     minWidth: 275,
@@ -21,6 +25,9 @@ const useStyles = makeStyles({
   pos: {
     marginBottom: 12,
   },
+  link:{
+    fontSize:30
+  }
 });
 
 
@@ -68,7 +75,7 @@ from Wolkite University on January 16, 2021 with Cumulative of GPA 3.66
       <CardContent>
         
         <Typography variant="h5" component="h2">
-        Higher Secondary
+        Higher Education
 
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
@@ -158,13 +165,32 @@ Score:436
       KushLiveStocke
       </Link>
       </div>
+          <div style={{marginTop:"20px"}}>
+       <Link href="http://erp.kushlivestock.com" underline="none">
+      Kush Erp LiveStock
+      </Link>
+      </div>
       </CardContent>
     </Card>
+        <Card className={classes.card}>
+          <CardContent> 
+            Social Links
+            <div style={{marginTop:"20px"}}>
+            <Link href="https://github.com/alemgena" className={classes.link} target="_blank" >
+    <GitHubIcon/>
+</Link>
+       <Link style={{marginLeft:"20px"}} href="https://linkedin.com/in/alemgena-teferi-373550230/" className={classes.link} target="_blank" >
+    <LinkedInIcon/>
+</Link>
+    <Link style={{marginLeft:"20px"}} href="https://t.me/alemgenateferi" className={classes.link} target="_blank" >
+    <TelegramIcon/>
+</Link>
+
+</div>
+          </CardContent>
+        </Card>
             </Box> 
-            
-            </Fade>
-        
-            
+            </Fade>   
         </Grid>
           </React.Fragment>
         );

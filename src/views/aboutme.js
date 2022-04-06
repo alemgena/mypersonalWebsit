@@ -96,7 +96,7 @@ export default function NestedGrid() {
               <PrettoSlider
                 valueLabelDisplay="auto"
                 aria-label="pretto slider"
-                defaultValue={100}
+                defaultValue={90}
               ></PrettoSlider>
             </Box>
             <Box>
@@ -116,7 +116,7 @@ export default function NestedGrid() {
               <PrettoSlider
                 valueLabelDisplay="auto"
                 aria-label="pretto slider"
-                defaultValue={100}
+                defaultValue={80}
               ></PrettoSlider>
             </Box>
             <Box>
@@ -126,7 +126,7 @@ export default function NestedGrid() {
               <PrettoSlider
                 valueLabelDisplay="auto"
                 aria-label="pretto slider"
-                defaultValue={100}
+                defaultValue={90}
               ></PrettoSlider>
             </Box>
             <Box>
@@ -136,7 +136,7 @@ export default function NestedGrid() {
               <PrettoSlider
                 valueLabelDisplay="auto"
                 aria-label="pretto slider"
-                defaultValue={100}
+                defaultValue={80}
               ></PrettoSlider>
             </Box>
             <Box>
@@ -146,7 +146,7 @@ export default function NestedGrid() {
               <PrettoSlider
                 valueLabelDisplay="auto"
                 aria-label="pretto slider"
-                defaultValue={100}
+                defaultValue={80}
               ></PrettoSlider>
             </Box>
           </Box>
