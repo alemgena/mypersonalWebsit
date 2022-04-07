@@ -8,7 +8,7 @@ import MonochromePhotosOutlined from '@material-ui/icons/MonochromePhotosOutline
 import AdbIcon from '@material-ui/icons/AdbOutlined'
 import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
-
+import './about.css'
 import Dividers from '../components/Dividers'
 import { PrettoSlider } from '../components/SliderTool'
 
@@ -61,6 +61,7 @@ export default function NestedGrid() {
 
           <Box className={classes.paper}>
             <Typography variant="body1" component="p">
+              <di className='text'>
               Web application developer, specializing in JavaScript,
               HTML5,Bootstrap, CSS3 ,SASS(SCSS). Experienced with all stages of
               the development cycle for dynamic web projects. Well-versed in
@@ -70,6 +71,7 @@ export default function NestedGrid() {
               ,GraphQl . For data base I am experienced in MongoDB ,MySQL,oracle
               . Generally am well experienced in full stack wed application
               developer .
+              </di>
             </Typography>
           </Box>
           <Box className={classes.paper}>

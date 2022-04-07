@@ -7,12 +7,12 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import ImageIcon from '@material-ui/icons/Image';
 import WorkIcon from '@material-ui/icons/Work';
+import PhoneIcon from '@material-ui/icons/Phone';
+import EmailIcon from '@mui/icons-material/Email';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 import Divider from '@material-ui/core/Divider';
-
 const useStyles = makeStyles(theme => ({
   root: {
-    
     width: '100%',
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
@@ -21,7 +21,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function InsetDividers() {
   const classes = useStyles();
-
   return (
     <List className={classes.root}>
       <ListItem>
@@ -36,7 +35,7 @@ export default function InsetDividers() {
       <ListItem>
         <ListItemAvatar>
           <Avatar>
-            <WorkIcon />
+            <PhoneIcon />
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary="Phone" secondary="+251948320125" />
@@ -45,7 +44,7 @@ export default function InsetDividers() {
       <ListItem>
         <ListItemAvatar>
           <Avatar>
-            <BeachAccessIcon />
+            <EmailIcon />
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary="EMAIL" secondary="alemgenateferi1@gmail.com" />

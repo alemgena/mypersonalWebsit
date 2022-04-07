@@ -1,5 +1,5 @@
 import React from "react";
-import {Grid,Box,Link ,Typography} from '@material-ui/core'
+import {Grid,Box,Link ,Typography,Tooltip} from '@material-ui/core'
 import Fade from 'react-reveal/Fade';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 //https://t.me/alemgenateferi
+
 import TelegramIcon from '@material-ui/icons/Telegram'
 //import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const useStyles = makeStyles({
@@ -33,7 +34,7 @@ const useStyles = makeStyles({
 
 export default function  Resume() {
     const classes = useStyles();
-    
+      const [hover,sethover]=React.useState(false);
     function FormRow() {
         return (
           <React.Fragment>
@@ -176,14 +177,22 @@ Score:436
           <CardContent> 
             Social Links
             <div style={{marginTop:"20px"}}>
-            <Link href="https://github.com/alemgena" className={classes.link} target="_blank" >
-    <GitHubIcon/>
+            <Link href="https://github.com/alemgena" className={classes.link} target="_blank"
+             >
+                <Tooltip title="GitHub">
+       <GitHubIcon/>
+    </Tooltip> 
+  
 </Link>
        <Link style={{marginLeft:"20px"}} href="https://linkedin.com/in/alemgena-teferi-373550230/" className={classes.link} target="_blank" >
+    <Tooltip title='LinkedIn'>
     <LinkedInIcon/>
+    </Tooltip>
 </Link>
     <Link style={{marginLeft:"20px"}} href="https://t.me/alemgenateferi" className={classes.link} target="_blank" >
+   <Tooltip title='Telegram'>
     <TelegramIcon/>
+    </Tooltip>
 </Link>
 
 </div>
